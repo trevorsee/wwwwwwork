@@ -9,25 +9,58 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<link rel="stylesheet" href="https://unpkg.com/tachyons@4.6.1/css/tachyons.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 	<link href="app.css" rel="stylesheet">
 </head>
 
-<body class="bg-near-white">
+<body class="bg-near-white h-100">
 
-<header role="w-100 fixed top-0 right-0 left-0">
-  <nav class="flex justify-between bg-white red ph5">
-    <h1 class="f5 fw4 dim link pointer">wwwwwwork</h1>
-		<div>
-    	<a href="#" id="info" class="link dim red" title="Info">edit</a>
-    	<a href="#" id="clear" class="link underline dim red" title="Clear/Delete">view</a>
+	<section class="container center h-100 relative">
+
+		<header class="w-100 fixed top-0 right-0 left-0 bg-gradient z-2">
+			<div class="container center">
+			  <nav class="flex justify-between items-center red ph5 pt2 pb4">
+			    <h1 class="f5 fw4 dim link pointer">wwwwwwork</h1>
+					<div>
+			    	<a href="#" id="list" class="link dim underline red" title="list">list</a>
+			    	<a href="#" id="cards" class="link dim red" title="cards">cards</a>
+					</div>
+					<a href="#" class="link dim red">about</a>
+				</nav>
+			</div>
+		</header>
+
+		<textarea id="listContent" class="h-100 bn f1 fw1 ph5 pt6 pb4 lh-title" placeholder="Add one item per line…" spellcheck="false"></textarea>
+
+		<div class="absolute top-6 right-0 measure-narrow ba b--red bg-80 z-1">
+			<div id="answer" class="f4 pa3 " >
+				The idea combines <span class="red">inversion</span>, <span class="red">film</span>, and <span class="red">urban planning</span>.
+			</div>
+			<a href="#" data-clipboard-target="#answer" class="copy dim black f6 ml3"><i class="fa fa-clipboard mb4 m/1" aria-hidden="true"></i>copy</a>
+
+			<form class="flex justify-between items-center bg-red">
+				<button id="start" class="bn pa1 f4 link dim ph3 pv2 dib white bg-red">Combine</button>
+				<select class="f4 red bg-white mr3">
+					<option value="2">2 items</option>
+					<option selected value="3">3 items</option>
+					<option value="4">4 items</option>
+					<option value="5">5 items</option>
+					<option value="6">6 items</option>
+					<option value="7">7 items</option>
+					<option value="8">8 items</option>
+					<option value="9">9 items</option>
+				</select>
+			</form>
 		</div>
-		<a>i</a>
-	</nav>
-</header>
 
-<textarea id="fileContent" class="h-100" placeholder="Start Writing..." spellcheck="false"></textarea>
+	</section>
 
-<script src="app.js"></script>
+	<section id="cardSpace" class="dn overflow-scroll top-0 left-0 right-0 bottom-0 fixed">
+		<div id="cardHolder" class="flex-wrap pt6 h-100 overflow-scroll"></div>
+	</section>
+
+	<script src="app.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.16/clipboard.min.js"></script>
 
 </body>
 </html>

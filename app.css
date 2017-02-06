@@ -17,70 +17,22 @@
 }
 
 html {
-  background: #fff;
-  color: #383838;
   height: 100%;
   font-size: 100%;
 }
-html.night {
-  background: #383838;
-  color: #ccc;
-}
 
 body {
-  height: 100%;
+  min-height: 100%;
   font-family: "Roboto Mono",monospace;
   font-size: 1em;
-  line-height: 1.7;
-  padding: 1em 0;
   /*Fix for FF on Mac: Font rendering a bit bolder than it should*/
   -moz-osx-font-smoothing: grayscale;
-}
-
-ul {
-  list-style: none;
-}
-
-::-moz-selection {
-  background: #ddd;
-}
-
-::selection {
-  background: #ddd;
-}
-
-html.night ::-moz-selection {
-  background: #111;
-}
-
-html.night ::selection {
-  background: #111;
-}
-
-button,input[type="text"],textarea {
-  font-family: inherit;
-  font-size: inherit;
-  color: inherit;
-  border: transparent;
 }
 
 input[type="text"],textarea {
   display: block;
   width: 100%;
   padding: .5em;
-}
-
-::-webkit-input-placeholder {
-    color: #999;
-}
-:-moz-placeholder {
-    color: #999;
-}
-::-moz-placeholder {
-    color: #999;
-}
-:-ms-input-placeholder {
-    color: #999;
 }
 
 textarea {
@@ -90,4 +42,36 @@ textarea {
 
 button:focus,input:focus,textarea:focus {
   outline: none;
+}
+
+.bg-gradient {
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%);
+}
+.bg-80 {
+  background:rgba(244,244,244,.8)
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.select {
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+}
+
+.top-6 {
+  top: 6rem;
+}
+
+.card-hover {
+  transition: .5s;
+}
+
+.card-hover:hover {
+  transform: rotate(0deg) scale(1.15) !important;
+  z-index: 5;
+  box-shadow: 4px 4px 16px 0px rgba( 0, 0, 0, 0.2);
+
 }
