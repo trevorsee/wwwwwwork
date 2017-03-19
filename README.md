@@ -1,23 +1,19 @@
 # wwwwwwork
 
-A simple online notepad, no WYSIWYG, no fancy stuff, just write. The text will live in your browser until you decide to delete or download it as a .txt file.
+Let the computer do the creative work – then you can focus on the rest. Often the best ideas are forced connections between unrelated things. That isn't something that humans are great at; but computers are!
 
-###[Try it!](http://textpad.surge.sh)
+### instructions
+Keep a running list of words, phrases, ideas, and topics that you are interested in. They will be saved to your browser's local cache. When you are stuck or need an idea click combine until you draw an interesting connection.
 
-##Why?
+### collaborative slippage
 
-Another browser text editor...I know, i know. Just because i can and want to!
+1. Humans (sometimes) collaborate with each other, tools, systems...
+2. Miscommunication and misread signals are critical to emergent ideas
+3. Who is the author? Are there new ideas?
+4. How can the qualities of automation and machines be engaged with for creativity.
 
-1. I find myself copy/pasting alot of text online, copy proofing something i want to publish on social media/comment feeds, or paste inside html templates i'm building.
-2. This little app also helps keep me focused when doing research online, taking notes without switching between a text editor and the browser.
-3. Inspired by others, and i wanted to really build something using [LocalStorage](https://developer.mozilla.org/en-US/docs/Web/API/Storage/LocalStorage).
+### References & Sources:
 
-##Thanks to:
-
-- FileSaver.js - [https://github.com/eligrey/FileSaver.js](https://github.com/eligrey/FileSaver.js)
-- Smoke.js - [https://github.com/hxgf/smoke.js](https://github.com/hxgf/smoke.js)
-- Countable.js - [https://github.com/RadLikeWhoa/Countable](https://github.com/RadLikeWhoa/Countable)
-
-These have been minified and included in app.js, without them half of TextPad's features wouldn't be possible.
-
-Read the CHANGELOG.md for info on new release!
+- [Textpad](https://github.com/syndicatefx/textpad) by Paulo Nunes
+- Local Storage
+- [Declarative Design Tools](http://www.jon.gold/2016/06/declarative-design-tools/) by Jon Gold
